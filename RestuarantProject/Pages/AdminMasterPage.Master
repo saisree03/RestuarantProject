@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.Master.cs" Inherits="RestuarantProject.Pages.AdminPortal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin Potral</title>
+    <link rel="stylesheet" href="\Design\AdminMasterPage.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="Admin-header">
+    <h2 id="heading" class="logo-h"><span>H</span>appy</h2>
+    <h6 class="tagline">Feels like your home</h6>
+</header>
+<nav class="Link-head">
+    <a href="\Pages\UserDetails.aspx" class="link">User Details</a>
+    <a href="\Pages\Home.aspx" class="link">LogOut</a>
+</nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+        <footer>
+    
+    <button onclick="location.href='#heading'" id="back">Back To Top</button>
+    <div id="Userfoot">
+        <h2>Connect With Us</h2>
+        <ul>
+         <li> <a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+         <li> <a href="https://www.facebook.com/login.php/">Facebook</a></li>
+         <li> <a href="https://x.com/login">Twitter</a></li>
+        </ul>
+    </div>
+    <p style="color:whitesmoke; text-align:center">© 2026 Happy. All Rights Reserved.</p>
+</footer> 
+</body>
+</html>

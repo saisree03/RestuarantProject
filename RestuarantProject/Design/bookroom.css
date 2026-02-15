@@ -1,0 +1,92 @@
+﻿* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+body 
+{
+    background: linear-gradient(120deg, #f0f4ff, #e6f0ff);
+}
+.Main-form
+{
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.form-content
+{
+    display: flex;
+    flex-direction: column;
+}
+.form-content label
+{
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+.form-content input,
+.form-content select
+{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+.form-content input:focus,
+.form-content select:focus 
+{
+    border-color: #4f7cff;
+    box-shadow: 0 0 0 2px rgba(79,124,255,0.2);
+}
+.form-content input[type="file"]
+{
+    padding: 6px;
+}
+.button
+{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.button input 
+{
+    padding: 12px 40px;
+    background: #4f7cff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button input:hover
+{
+    background: #3b63e0;
+}
+@media (max-width: 768px)
+{
+    .Main-form {
+        padding: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .Main-form {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .button input {
+        width: 100%;
+    }
+}

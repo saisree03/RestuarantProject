@@ -1,0 +1,30 @@
+﻿body
+{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fff1eb, #ace0f9);
+    margin: 0;
+    padding: 0;
+}
+.Content-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 40px 0 20px;
+    color: #333;
+    position: relative;
+   
+#head-content {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    
+}
+    #head-content:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 40px rgba(0,0,0,0.15);
+    }

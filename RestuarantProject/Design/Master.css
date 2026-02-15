@@ -1,0 +1,103 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.site-header {
+    background: linear-gradient(135deg, #28a745, #218838);
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.site-header h2
+{
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 2px;
+
+}
+.logo-h 
+{
+    color: #ffeb3b;
+    font-size: 56px;
+}
+.tagline {
+    margin-top: 6px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.site-header {
+    animation: fadeDown 1.2s ease;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav {
+    background: #28a745;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    display: flex;
+    gap: 15px;
+}
+
+.link {
+    display: inline-block;
+    width: 260px;
+    height: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+.link:hover
+{
+    border: 2px solid white;
+
+}
+footer 
+{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#back {
+    width: 100%;
+    background: linear-gradient(45deg,black,white);
+    height: 40px;
+}
+
+#foot {
+    text-align: center;
+}
+#foot h2 
+{
+    color: white;
+    margin-left: 20px;
+
+}
+#foot ul li a 
+{
+    text-decoration: none;
+
+}

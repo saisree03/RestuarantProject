@@ -1,0 +1,128 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body 
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.Admin-header
+{
+    background: #1e293b;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.logo-h 
+{
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+.logo-h span 
+{
+    color: #f59e0b;
+}
+
+.tagline {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    opacity: 0.85;
+}
+
+.Link-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    background: #334155;
+    padding: 0.7rem;
+}
+.Link-head .link 
+{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+.Link-head .link:hover
+{
+    background: #475569;
+}
+form
+{
+    flex: 1;
+    padding: 1rem;
+}
+
+#ContentPlaceHolder1
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer
+{
+    background: #020617;
+    color: whitesmoke;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+}
+
+#back
+{
+    display: block;
+    margin: auto;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: #f59e0b;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+ #back:hover 
+ {
+     background: #fbbf24;
+ }
+
+#Userfoot 
+{
+    text-align: center;
+    margin-top: 1rem;
+}
+#Userfoot ul
+{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+    }
+#Userfoot a
+{
+    color: #e5e7eb;
+    text-decoration: none;
+}
+#Userfoot a:hover 
+{
+    text-decoration: underline;
+}
+@media (max-width: 600px)
+{
+    .Link-head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #back {
+        width: 100%;
+        max-width: 300px;
+    }
+}

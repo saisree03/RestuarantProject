@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RegisterMain.master.cs" Inherits="RestuarantProject.RegisterMain" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Happy</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="\Design\Master.css"rel="stylesheet" />
+   
+</head>
+<body>
+    <header class="site-header">
+        <h2 id="heading" class="logo-h"><span>H</span>appy</h2>
+        <h6 class="tagline">Feels like your home</h6>
+    </header>
+   
+    <nav>
+        <a href="\Pages\Home.aspx" class="link">Home</a>
+        <a href="\Pages\AboutUs.aspx" class="link">About Us</a>
+        <a href="\Pages\Contact.aspx" class="link">Contact</a>
+        <a href="\Pages\Login.aspx" class="link">Login</a>
+        <a href="\Pages\SignUp.aspx" class="link">SignUp</a>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+        
+        <button onclick="location.href='#heading'" id="back">Back To Top</button>
+        <div id="foot">
+            <h2>Connect With Us</h2>
+            <ul>
+             <li> <a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+             <li> <a href="https://www.facebook.com/login.php/">Facebook</a></li>
+             <li> <a href="https://x.com/login">Twitter</a></li>
+            </ul>
+        </div>
+        <p style="color:whitesmoke; text-align:center">© 2026 Happy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

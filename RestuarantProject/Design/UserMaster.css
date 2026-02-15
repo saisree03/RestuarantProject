@@ -1,0 +1,153 @@
+﻿* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body
+{
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.user-header
+{
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.logo-h {
+    font-size: 32px;
+    font-weight: bold;
+}
+.logo-h span 
+{
+    color: #f59e0b;
+}
+
+.tagline
+{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #cbd5e1;
+}
+.Link-head
+{
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.link
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.link:hover
+{
+    background: #f59e0b;
+    color: black;
+}
+
+form 
+{
+    flex: 1;
+    padding: 20px;
+}
+
+footer 
+{
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#Userfoot h2 {
+    margin-bottom: 10px;
+}
+
+#Userfoot ul {
+    list-style: none;
+}
+#Userfoot ul li
+{
+    margin: 5px 0;
+}
+#Userfoot ul li a
+{
+    color: #f59e0b;
+    text-decoration: none;
+}
+#Userfoot ul li a:hover
+{
+    text-decoration: underline;
+}
+#back
+{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+    background: #f59e0b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#back:hover 
+{
+    background: #ffb703;
+}
+@media (max-width: 768px) {
+    .logo-h {
+        font-size: 24px;
+    }
+
+    .link {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+
+    .user-header {
+        padding: 15px 5px;
+    }
+
+    .logo-h {
+        font-size: 20px;
+    }
+
+    .tagline {
+        font-size: 12px;
+    }
+
+    .Link-head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        width: 90%;
+        text-align: center;
+    }
+
+    #back {
+        right: 10px;
+        bottom: 10px;
+        padding: 8px 12px;
+    }
+}

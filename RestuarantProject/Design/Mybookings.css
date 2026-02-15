@@ -1,0 +1,55 @@
+﻿.grid-scroll-wrapper 
+{
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+#ContentPlaceHolder1_GridView1 
+{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; 
+    font-family: Arial, sans-serif;
+}
+#ContentPlaceHolder1_GridView1 th 
+{
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 15px;
+}
+#ContentPlaceHolder1_GridView1 td
+{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+#ContentPlaceHolder1_GridView1 tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+#ContentPlaceHolder1_GridView1 tr:hover 
+{
+    background-color: #e6f2ff;
+}
+@media screen and (max-width: 768px)
+{
+
+    #ContentPlaceHolder1_GridView1 th,
+    #ContentPlaceHolder1_GridView1 td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+
+    #ContentPlaceHolder1_GridView1 th,
+    #ContentPlaceHolder1_GridView1 td {
+        font-size: 11px;
+        padding: 6px;
+    }
+}
